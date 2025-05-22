@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #d2b48c; /* 淺咖啡色 */
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #333;
+    }
+
+    .section {
+      background: #fff;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      color: #6c4f3d;
+      font-weight: 600;
+    }
+
+    .bg-white-shadow {
+      background-color: #fff;
+      padding: 0.75rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .btn-primary {
+      background-color: #6c4f3d;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #5c3f2d;
+    }
+
+    footer {
+      background-color: #4b3621;
+      color: #fff;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">作品集</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">作品集</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <!-- 關於我 -->
+    <section id="about" class="section text-center">
+      <img src="attached_assets/a.jpg" alt="個人照片" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+      <h1 class="border-bottom pb-2" style="color: #000;">關於我</h1>
+      <p class="lead">
+        <strong>莊寀雯</strong><br>
+        職業：台灣科技大學學生<br>就讀領域：企業管理系
+        
+      </p>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="projects" class="section">
+      <h2 class="text-center mb-4">作品集</h2>
+      <div class="row g-4">
+        <!-- 作品 1 -->
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="bg-white-shadow mb-3">
+              <img src="attached_assets/b.JPG" alt="作品1圖片" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">作品 1</h3>
+              <p class="card-text">
+                Gemma3 純文字 LLM 應用範例<br>
+                使用 Streamlit 和 CV2 開發影像辨識工具，展現實務操作能力。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 2 -->
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="bg-white-shadow mb-3">
+              <img src="attached_assets/d.JPG" alt="作品2圖片" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">作品 2</h3>
+              <p class="card-text">
+                人臉辨識與網格建模<br>
+                即時臉部特徵點追蹤與3D建模，強化 AI 與互動應用整合。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 3 -->
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="bg-white-shadow mb-3">
+              <img src="attached_assets/Canva Demo.png" alt="作品3圖片" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">作品 3</h3>
+              <p class="card-text">
+                AI 午餐選擇困難解決器<br>
+                透過日常生活中的觀察，找出 AI 在生活場景的應用。
+              </p>
+              <a href="https://www.canva.com/design/DAGoC6p5BpM/eWwMF130dx8GsvMIAV7pXg/view?utm_content=DAGoC6p5BpM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93ab8ea066" target="_blank" class="btn btn-primary">查看作品</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact" class="section text-center">
+      <h2>聯絡方式</h2>
+      <p>
+        📞 <strong>連絡電話：</strong> 0930-688-466<br>
+        📧 <strong>Email：</strong> caiwenzhuang123@gmail.com
+      </p>
+    </section>
+  </main>
+
+  <footer class="text-center py-3">
+    <p>&copy; 2025 莊寀雯 | 個人作品集</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
